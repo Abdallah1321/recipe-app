@@ -85,45 +85,25 @@ img {
   }
 }
 
-.section.hero {
-  .typography {
-    padding-right: 1em;
-  }
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.75vw;
-    .custom-image {
-      border-radius: 3px;
-      overflow: hidden;
-      transform: scale(0);
-      opacity: 0;
+@import "partials/hero.scss";
 
-      animation: getAnimationDuration(0.5s) popOut forwards;
-      &:nth-child(2) {
-        animation-delay: 0.1s;
-      }
-      &:nth-child(3) {
-        animation-delay: 0.2s;
-      }
-      &:nth-child(6) {
-        animation-delay: 0.3s;
-      }
-      &:nth-child(9) {
-        animation-delay: 0.4s;
-      }
-      &:nth-child(8) {
-        animation-delay: 0.5s;
-      }
-      &:nth-child(7) {
-        animation-delay: 0.6s;
-      }
-      &:nth-child(4) {
-        animation-delay: 0.7s;
-      }
-      &:nth-child(5) {
-        animation-delay: 0.8s;
-      }
+.footer {
+  background-color: #0f0f0f;
+  color: #fff;
+  padding-block: 3em;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 1em;
+  .footer-section {
+    p {
+      opacity: 0.9;
+      margin-bottom: 0.5em;
+    }
+    p.title {
+      opacity: 1;
+      font-weight: bold;
+      margin-bottom: 1em;
+      font-size: 1.1em;
     }
   }
 }
