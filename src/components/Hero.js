@@ -43,7 +43,7 @@ export default function Hero() {
       </div>
       <div className="col gallery">
         {randomImages.map((src, index) => (
-          <CustomImage key ={index} imgSrc={src} pt={"90%"} />
+          <CustomImage key={index} imgSrc={src} pt={"90%"} />
         ))}
       </div>
     </div>
