@@ -4,6 +4,7 @@ export default function Hero() {
   const images = [
     "/img/foodPics/brookies.jpg",
     "/img/foodPics/brownies.jpg",
+    "/img/foodPics/breakfastburritos.jpg",
     "/img/foodPics/burger.jpg",
     "/img/foodPics/burritobowl.jpg",
     "/img/foodPics/caremelisedonionpasta.jpg",

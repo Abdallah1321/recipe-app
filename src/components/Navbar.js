@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { faHome, faList, faInfo } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faList, faCog } from "@fortawesome/free-solid-svg-icons";
 import Sidebar from "./Sidebar";
 
 export default function Navbar() {
@@ -16,9 +16,9 @@ export default function Navbar() {
       icon: faList,
     },
     {
-      name: "About",
-      path: "/about",
-      icon: faInfo,
+      name: "Settings",
+      path: "/settings",
+      icon: faCog,
     },
   ];
 
@@ -38,9 +38,6 @@ export default function Navbar() {
               {link.name}
             </a>
           ))}
-          {/* <a href="#!">Home</a>
-          <a href="#!">Recipes</a>
-          <a href="#!">About</a> */}
         </div>
         <div
           onClick={() => setShowSidebar(!showSidebar)}
