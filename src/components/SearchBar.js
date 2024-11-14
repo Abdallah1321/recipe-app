@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
-export default function SearchBar() {
+export default function SearchBar({onSearch}) {
   const searches = ["Brownies", "Burger", "Cookies", "Tiramisu", "Hash Browns"];
-
+  
   return (
     <div className="featured-searches section">
       <h2>Featured Searches</h2>
@@ -19,7 +19,7 @@ export default function SearchBar() {
         ))}
       </div>
       <div className="search-box">
-        <input type="text" placeholder="Search... " />
+        <input type="text" placeholder="Search... " onChange={(e) => onSearch(e.target.value)} />
         <button className="btn">
           <FontAwesomeIcon icon={faSearch} />
         </button>
