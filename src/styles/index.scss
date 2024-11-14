@@ -99,6 +99,8 @@ img {
   grid-gap: 1.5em;
 }
 .recipe-card {
+  max-width: 300px;
+  width: 100%;
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 5px 10px var(--shadow-color);
