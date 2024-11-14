@@ -2,7 +2,7 @@ const recipeData = [
   {
     name: "Cookies",
     slug: "cookies",
-    desc: "The traditional chocolate chip cookie recipe",
+    desc: "Classic chocolate chip cookies for a sweet treat",
     img: "/img/foodPics/cookies.jpg",
     ingredients: [""],
     steps: [""],
@@ -15,7 +15,7 @@ const recipeData = [
   {
     name: "Breakfast Burritos",
     slug: "breakfast-burritos",
-    desc: "A quick and easy meal prep",
+    desc: "Quick and filling breakfast to start your day.",
     img: "/img/foodPics/breakfastburritos.jpg",
     ingredients: [""],
     steps: [""],
@@ -28,7 +28,7 @@ const recipeData = [
   {
     name: "Brookies",
     slug: "brookies",
-    desc: "A match made in heaven",
+    desc: "A delicious fusion of brownies and cookies.",
     img: "/img/foodPics/brookies.jpg",
     ingredients: [""],
     steps: [""],
@@ -41,7 +41,7 @@ const recipeData = [
   {
     name: "Brownies",
     slug: "brownies",
-    desc: "The perfect fudgy brownie",
+    desc: "Perfectly fudgy brownies that melt in your mouth.",
     img: "/img/foodPics/brownies.jpg",
     ingredients: [""],
     steps: [""],
@@ -54,7 +54,7 @@ const recipeData = [
   {
     name: "Chicken Burrito Bowl",
     slug: "burrito-bowl",
-    desc: "This taste so good",
+    desc: "A flavorful and healthy meal in a bowl.",
     img: "/img/foodPics/burritobowl.jpg",
     ingredients: [""],
     steps: [""],
@@ -67,7 +67,7 @@ const recipeData = [
   {
     name: "Caremelised Onion Pasta",
     slug: "caremelised-onion-pasta",
-    desc: "If you love caremelised onions, this is for you",
+    desc: "A savory pasta dish with sweet caramelized onions.",
     img: "/img/foodPics/caremelisedonionpasta.jpg",
     ingredients: [""],
     steps: [""],
@@ -80,7 +80,7 @@ const recipeData = [
   {
     name: "San Sebastian Cheesecake",
     slug: "basque-cheesecake",
-    desc: "The perfect san sebastian (Basque) cheesecake",
+    desc: "Creamy and decadent San Sebastian cheesecake.",
     img: "/img/foodPics/cheesecake.jpg",
     ingredients: [""],
     steps: [""],
@@ -93,7 +93,7 @@ const recipeData = [
   {
     name: "Chili Con Carne",
     slug: "chili-con-carne",
-    desc: "Perfect for burritos, or just serving with rice",
+    desc: "A rich, hearty chili perfect for any occasion.",
     img: "/img/foodPics/chiliconcarne.jpg",
     ingredients: [""],
     steps: [""],
@@ -106,7 +106,7 @@ const recipeData = [
   {
     name: "Creme Brulee",
     slug: "creme-brulee",
-    desc: "A fun dessert to make",
+    desc: "A creamy dessert with a perfect caramelized top.",
     img: "/img/foodPics/cremebrulee.jpg",
     ingredients: [""],
     steps: [""],
@@ -119,7 +119,7 @@ const recipeData = [
   {
     name: "Dumplings",
     slug: "dumplings",
-    desc: "Traditional beef dumplings",
+    desc: "Delicious homemade beef dumplings.",
     img: "/img/foodPics/dumpling.jpg",
     ingredients: [""],
     steps: [""],
@@ -132,7 +132,7 @@ const recipeData = [
   {
     name: "Eclairs",
     slug: "eclairs",
-    desc: "My brain is struggling to come up with descriptions",
+    desc: "Light and airy pastry filled with cream.",
     img: "/img/foodPics/eclairs.jpg",
     ingredients: [""],
     steps: [""],
@@ -145,7 +145,7 @@ const recipeData = [
   {
     name: "Fried Chicken",
     slug: "fried-chicken",
-    desc: "My brain is struggling to come up with descriptions",
+    desc: "Crispy, golden fried chicken that’s perfect every time.",
     img: "/img/foodPics/friedchicken.jpg",
     ingredients: [""],
     steps: [""],
@@ -158,7 +158,7 @@ const recipeData = [
   {
     name: "Grilled Cheese Sandwich",
     slug: "grilled-cheese",
-    desc: "The perfect grilled cheese sandwich",
+    desc: "The ultimate comfort food with melty cheese.",
     img: "/img/foodPics/grilledcheese.jpg",
     ingredients: [""],
     steps: [""],
@@ -171,7 +171,7 @@ const recipeData = [
   {
     name: "Hashbrowns",
     slug: "hashbrowns",
-    desc: "My brain is struggling to come up with descriptions",
+    desc: "Crispy golden hashbrowns for a perfect breakfast.",
     img: "/img/foodPics/hashbrown.jpg",
     ingredients: [""],
     steps: [""],
@@ -184,7 +184,7 @@ const recipeData = [
   {
     name: "Molten Cake",
     slug: "molten-cake",
-    desc: "My brain is struggling to come up with descriptions",
+    desc: "Rich and gooey chocolate molten lava cake.",
     img: "/img/foodPics/moltencake.jpg",
     ingredients: [""],
     steps: [""],
@@ -197,7 +197,7 @@ const recipeData = [
   {
     name: "Mozzarella Sticks",
     slug: "mozzarella-sticks",
-    desc: "My brain is struggling to come up with descriptions",
+    desc: "Crispy, cheesy mozzarella sticks that are a crowd-pleaser.",
     img: "/img/foodPics/mozzarellasticks.jpg",
     ingredients: [""],
     steps: [""],
@@ -210,7 +210,7 @@ const recipeData = [
   {
     name: "Double Chocolate Muffins",
     slug: "double-chocolate-muffins",
-    desc: "The viral olympic chocolate muffins",
+    desc: "Rich and indulgent double chocolate muffins.",
     img: "/img/foodPics/muffins.jpg",
     ingredients: [""],
     steps: [""],
@@ -223,7 +223,7 @@ const recipeData = [
   {
     name: "Pizza",
     slug: "pizza",
-    desc: "My brain is struggling to come up with descriptions",
+    desc: "Homemade pizza with your favorite toppings.",
     img: "/img/foodPics/pizza.jpg",
     ingredients: [""],
     steps: [""],
@@ -236,7 +236,7 @@ const recipeData = [
   {
     name: "Red Velvet Cake",
     slug: "red-velvet-cake",
-    desc: "My brain is struggling to come up with descriptions",
+    desc: "Moist and decadent red velvet cake with cream cheese frosting.",
     img: "/img/foodPics/redvelvet.jpg",
     ingredients: [""],
     steps: [""],
@@ -249,7 +249,7 @@ const recipeData = [
   {
     name: "Salmon Poke Bowl",
     slug: "salmon-poke-bowl",
-    desc: "My brain is struggling to come up with descriptions",
+    desc: "Fresh, healthy poke bowl with marinated salmon.",
     img: "/img/foodPics/salmonpokebowl.jpg",
     ingredients: [""],
     steps: [""],
@@ -262,7 +262,7 @@ const recipeData = [
   {
     name: "Shrimp Fried Rice",
     slug: "shrimp-fried-rice",
-    desc: "My brain is struggling to come up with descriptions",
+    desc: "Flavorful shrimp fried rice made with fresh ingredients.",
     img: "/img/foodPics/shrimpfriedrice.jpg",
     ingredients: [""],
     steps: [""],
@@ -275,10 +275,10 @@ const recipeData = [
   {
     name: "Tiramisu",
     slug: "tiramisu",
-    desc: "My brain is struggling to come up with descriptions",
+    desc: "Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.",
     img: "/img/foodPics/tiramisu.jpg",
     ingredients: [
-      "1 1/2 cups of coffee (rooom temperature)",
+      "1 1/2 cups of coffee (room temperature)",
       "1 tbsp and 2 tsps vanilla extract",
       "452 grams mascrapone cheese",
       "6 large egg yolks",
@@ -308,7 +308,7 @@ const recipeData = [
   {
     name: "Yellow Rice and Grilled Chicken",
     slug: "yellow-rice-chicken",
-    desc: "My brain is struggling to come up with descriptions",
+    desc: "A flavorful meal with savory yellow rice and grilled chicken.",
     img: "/img/foodPics/yellowricechicken.jpg",
     ingredients: [""],
     steps: [""],
