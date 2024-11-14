@@ -10,6 +10,7 @@ export default function Recipes() {
     item.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
+
   return (
     <div>
       <SearchBar onSearch={setSearchTerm} />
