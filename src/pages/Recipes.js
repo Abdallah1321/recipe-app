@@ -1,29 +1,15 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faS, faSearch } from "@fortawesome/free-solid-svg-icons";
+import SearchBar from "../components/SearchBar";
+import RecipeCard from "../components/RecipeCard";
+import recipeData from "../assets/data.js";
 
 export default function Recipes() {
-  const searches = ["Brownies", "Burger", "Cookies", "Tiramisu", "Hash Browns"];
   return (
     <div>
-      <div className="featured-searches section">
-        <h2>Featured Searches</h2>
-        <div className="featured-searches-container">
-          {searches.map((search, index) => (
-            <div
-              key={index}
-              style={{ animationDelay: index * 0.1 + "s" }}
-              className="search-item"
-            >
-              {search}
-            </div>
-          ))}
-        </div>
-        <div className="search-box">
-          <input type="text" placeholder="Search... " />
-          <button className="btn">
-            <FontAwesomeIcon icon={faSearch}/>
-          </button>
-        </div>
+      <SearchBar />
+      <div className="recipes-container">
+        {recipeData.map((recipe, index) => (
+          <RecipeCard key={index} recipe={recipe} />
+        ))}
       </div>
     </div>
   );
