@@ -49,9 +49,11 @@ export default function RecipeDetails() {
           <li key={index}>{step}</li>
         ))}
       </ol>
-      <p className="recipe-notes">
-        <strong>Notes:</strong> {recipe.notes}
-      </p>
+      {recipe.notes && (
+        <p className="recipe-notes">
+          <strong>Notes:</strong> {recipe.notes}
+        </p>
+      )}
     </div>
   );
 }
