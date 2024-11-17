@@ -33,7 +33,7 @@ export default function Navbar() {
     <>
       <div className="navbar container">
         <Link to={"/"} className="logo">
-          Abdallah's Recipes
+          <img src="/img/logo.png" />
         </Link>
         <div className="nav-links">
           {links.map((link) => (

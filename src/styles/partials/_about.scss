@@ -2,7 +2,9 @@
   .col.img {
     img {
       width: 100%;
-      height: 340px;
+      height: 500px;
+      object-fit: cover; /* Ensures the image covers the container without distorting */
+      object-position: center; /* Centers the focal point of the image */
     }
   }
   .col.typography {
@@ -13,7 +15,7 @@
       padding: 0.2em 0 0.2em 0.5em;
       color: var(--text-light);
       font-weight: bold;
-      transform: translateX(100%);
+      transform: translateX(20px);
       opacity: 0;
       animation: getAnimationDuration(0.25s) slideInRight forwards;
       @for $i from 2 through 7 {

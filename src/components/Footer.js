@@ -10,14 +10,12 @@ export default function Footer() {
       </div>
       <div className="footer-section">
         <p className="title">Contact Me!</p>
-        <p>
-          abdallah.hussein.ibrahim@gmail.com
-        </p>
+        <p>abdallah.hussein.ibrahim@gmail.com</p>
       </div>
       <div className="footer-section">
         <p className="title">Socials</p>
         <p>
-          TikTok
+          <a href="https://www.tiktok.com/@bido248">TikTok</a>
         </p>
       </div>
     </div>

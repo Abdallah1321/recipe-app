@@ -1,20 +1,35 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
-export default function SearchBar({onSearch}) {
-  const searches = ["Brownies", "Burger", "Cookies", "Tiramisu", "Hash Browns"];
+export default function SearchBar({onSearch, recipeData} ) {
+  const [randomRecipes, setRandomRecipes] = useState([]);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    // Select 6 random recipes from recipeData
+    const shuffledRecipes = [...recipeData].sort(() => 0.5 - Math.random());
+    setRandomRecipes(shuffledRecipes.slice(0, 6));
+  }, [recipeData]);
+
+  const handleSearchClick = (slug) => {
+    // Navigate to the corresponding recipe page
+    navigate(`/recipes/${slug}`);
+  };
   
   return (
     <div className="featured-searches section">
-      <h2>Featured Searches</h2>
+      <h2>Suggested Searches</h2>
       <div className="featured-searches-container">
-        {searches.map((search, index) => (
+        {randomRecipes.map((recipe, index) => (
           <div
             key={index}
             style={{ animationDelay: index * 0.1 + "s" }}
             className="search-item"
+            onClick={() => handleSearchClick(recipe.slug)}
           >
-            {search}
+            {recipe.name}
           </div>
         ))}
       </div>

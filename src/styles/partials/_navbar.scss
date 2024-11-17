@@ -2,7 +2,7 @@
 .navbar {
     height: 55px;
     box-shadow: 0 3px 6px var(--shadow-color);
-    background-color: var(--background-color);
+    background-color: #f3f0f1;
     color: var(--text-color);
     display: flex;
     justify-content: space-between;
@@ -13,12 +13,14 @@
     z-index: 998;
   
     .logo {
-      font-size: 1.2em;
-      font-weight: bolder;
-      color: var(--primary-color);
-      text-decoration: none;
-      text-shadow: 0 1px 3px var(--shadow-color);
-    }
+      display: flex;
+      align-items: center;
+      height: 100%;
+      img {
+          max-height: 80%; /* Ensures the logo scales proportionally */
+          max-width: auto; /* Keeps the original proportions */
+      }
+  }
   
     .nav-links {
       a {

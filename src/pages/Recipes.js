@@ -13,7 +13,7 @@ export default function Recipes() {
 
   return (
     <div>
-      <SearchBar onSearch={setSearchTerm} />
+      <SearchBar onSearch={setSearchTerm} recipeData={recipeData} />
       <div className="recipes-container">
         {filteredData.map((recipe, index) => (
           <RecipeCard key={index} recipe={recipe} />
