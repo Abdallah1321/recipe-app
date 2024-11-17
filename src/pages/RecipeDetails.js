@@ -28,10 +28,10 @@ export default function RecipeDetails() {
       )}
       <div className="recipe-extra-details">
         <p>
-          <strong>Prep Time:</strong> {recipe.prepTime}
+          <strong>Prep Time:</strong> {recipe.prepTime} 
         </p>
         <p>
-          <strong>Cook Time:</strong> {recipe.cookTime}
+          <strong>Cook Time:</strong> {recipe.cookTime} 
         </p>
         <p>
           <strong>Servings:</strong> {recipe.servings}
