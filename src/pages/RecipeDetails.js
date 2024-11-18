@@ -28,10 +28,10 @@ export default function RecipeDetails() {
       )}
       <div className="recipe-extra-details">
         <p>
-          <strong>Prep Time:</strong> {recipe.prepTime} 
+          <strong>Prep Time:</strong> {recipe.prepTime}
         </p>
         <p>
-          <strong>Cook Time:</strong> {recipe.cookTime} 
+          <strong>Cook Time:</strong> {recipe.cookTime}
         </p>
         <p>
           <strong>Servings:</strong> {recipe.servings}
@@ -39,8 +39,15 @@ export default function RecipeDetails() {
       </div>
       <h3 className="recipe-ingredients">Ingredients</h3>
       <ul>
-        {recipe.ingredients.map((ingredient, index) => (
-          <li key={index}>{ingredient}</li>
+        {recipe.ingredients.map((section, index) => (
+          <div key={index}>
+            {section.title && <h3>{section.title}</h3>}
+            <ul>
+              {section.items.map((ingredient, idx) => (
+                <li key={idx}>{ingredient}</li>
+              ))}
+            </ul>
+          </div>
         ))}
       </ul>
       <h3 className="recipe-steps">Steps</h3>
