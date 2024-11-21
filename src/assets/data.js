@@ -4,6 +4,7 @@ const recipeData = [
     slug: "cookies",
     desc: "Classic chocolate chip cookies for a sweet treat",
     img: "/img/foodPics/cookies.jpg",
+    filters: ["Dessert"],
     ingredients: [
       {
         items: [
@@ -45,6 +46,7 @@ const recipeData = [
     slug: "breakfast-burritos",
     desc: "Quick and filling breakfast to start your day.",
     img: "/img/foodPics/breakfastburritos.jpg",
+    filters: ["Breakfast", "Healthy"],
     ingredients: [
       {
         items: [
@@ -95,6 +97,7 @@ const recipeData = [
     slug: "brookies",
     desc: "A delicious fusion of brownies and cookies.",
     img: "/img/foodPics/brookies.jpg",
+    filters: ["Dessert"],
     ingredients: [
       {
         title: "For Cookies",
@@ -152,6 +155,7 @@ const recipeData = [
     slug: "brownies",
     desc: "Perfectly fudgy brownies that melt in your mouth.",
     img: "/img/foodPics/brownies.jpg",
+    filters: ["Dessert"],
     ingredients: [
       {
         items: [
@@ -189,6 +193,7 @@ const recipeData = [
     slug: "burrito-bowl",
     desc: "A flavorful and healthy meal in a bowl.",
     img: "/img/foodPics/burritobowl.jpg",
+    filters: ["Lunch", "Healthy"],
     ingredients: [
       {
         items: [
@@ -253,6 +258,7 @@ const recipeData = [
     slug: "caremelised-onion-pasta",
     desc: "A savory pasta dish with sweet caramelized onions.",
     img: "/img/foodPics/caremelisedonionpasta.jpg",
+    filters: ["Lunch", "Pasta"],
     ingredients: [
       {
         items: [
@@ -286,6 +292,7 @@ const recipeData = [
     slug: "basque-cheesecake",
     desc: "Creamy and decadent San Sebastian cheesecake.",
     img: "/img/foodPics/cheesecake.jpg",
+    filters: ["Dessert", "Cake"],
     ingredients: [
       {
         items: [
@@ -323,6 +330,7 @@ const recipeData = [
     slug: "chili-con-carne",
     desc: "A rich, hearty chili perfect for any occasion.",
     img: "/img/foodPics/chiliconcarne.jpg",
+    filters: ["Lunch"],
     ingredients: [
       {
         items: [
@@ -364,6 +372,7 @@ const recipeData = [
     slug: "creme-brulee",
     desc: "A creamy dessert with a perfect caramelized top.",
     img: "/img/foodPics/cremebrulee.jpg",
+    filters: ["Dessert"],
     ingredients: [
       {
         items: [
@@ -397,6 +406,7 @@ const recipeData = [
     slug: "dumplings",
     desc: "Delicious homemade beef dumplings.",
     img: "/img/foodPics/dumpling.jpg",
+    filters: ["Appetizer"],
     ingredients: [
       {
         title: "FOR DUMPLING WRAPPERS",
@@ -444,6 +454,7 @@ const recipeData = [
     slug: "eclairs",
     desc: "Light and airy pastry filled with cream.",
     img: "/img/foodPics/eclairs.jpg",
+    filters: ["Dessert"],
     ingredients: [
       {
         title: "FOR CUSTARD FILLING",
@@ -501,6 +512,7 @@ const recipeData = [
     slug: "fried-chicken",
     desc: "Crispy, golden fried chicken that’s perfect every time.",
     img: "/img/foodPics/friedchicken.jpg",
+    filters: ["Lunch"],
     ingredients: [
       {
         items: [
@@ -539,6 +551,7 @@ const recipeData = [
     slug: "grilled-cheese",
     desc: "The ultimate comfort food with melty cheese.",
     img: "/img/foodPics/grilledcheese.jpg",
+    filters: ["Breakfast"],
     ingredients: [
       {
         items: [
@@ -567,6 +580,7 @@ const recipeData = [
     slug: "hashbrowns",
     desc: "Crispy golden hashbrowns for a perfect breakfast.",
     img: "/img/foodPics/hashbrown.jpg",
+    filters: ["Breakfast"],
     ingredients: [
       {
         items: [
@@ -602,6 +616,7 @@ const recipeData = [
     slug: "molten-cake",
     desc: "Rich and gooey chocolate molten lava cake.",
     img: "/img/foodPics/moltencake.jpg",
+    filters: ["Dessert", "Cake"],
     ingredients: [
       {
         items: [
@@ -637,6 +652,7 @@ const recipeData = [
     slug: "mozzarella-sticks",
     desc: "Crispy, cheesy mozzarella sticks that are a crowd-pleaser.",
     img: "/img/foodPics/mozzarellasticks.jpg",
+    filters: ["Appetizer"],
     ingredients: [
       {
         items: [
@@ -668,6 +684,8 @@ const recipeData = [
     slug: "double-chocolate-muffins",
     desc: "Rich and indulgent double chocolate muffins.",
     img: "/img/foodPics/muffins.jpg",
+    filters: ["Dessert"],
+
     ingredients: [
       {
         title: "For Muffins",
@@ -724,6 +742,7 @@ const recipeData = [
     slug: "pizza",
     desc: "Homemade pizza with your favorite toppings.",
     img: "/img/foodPics/pizza.jpg",
+    filters: ["Lunch"],
     ingredients: [
       {
         items: [
@@ -758,6 +777,7 @@ const recipeData = [
     slug: "red-velvet-cake",
     desc: "Moist and decadent red velvet cake with cream cheese frosting.",
     img: "/img/foodPics/redvelvet.jpg",
+    filters: ["Dessert", "Cake"],
     ingredients: [
       {
         title: "For Cake",
@@ -808,6 +828,7 @@ const recipeData = [
     slug: "salmon-poke-bowl",
     desc: "Fresh, healthy poke bowl with marinated salmon.",
     img: "/img/foodPics/salmonpokebowl.jpg",
+    filters: ["Lunch"],
     ingredients: [
       {
         items: [
@@ -847,6 +868,7 @@ const recipeData = [
     slug: "shrimp-fried-rice",
     desc: "Flavorful shrimp fried rice made with fresh ingredients.",
     img: "/img/foodPics/shrimpfriedrice.jpg",
+    filters: ["Lunch", "Healthy"],
     ingredients: [
       {
         items: [
@@ -891,6 +913,7 @@ const recipeData = [
     slug: "tiramisu",
     desc: "Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.",
     img: "/img/foodPics/tiramisu.jpg",
+    filters: ["Dessert", "Cake"],
     ingredients: [
       {
         items: [
@@ -920,7 +943,8 @@ const recipeData = [
     prepTime: "30 minutes",
     cookTime: "5 hours",
     servings: "12",
-    notes: "Its best to leave the tiramisu overnight for the best flavour and for it to set fully. Also if you cannot find any ladyfingers, they are very easy to make and I will post a recipe for it soon.",
+    notes:
+      "Its best to leave the tiramisu overnight for the best flavour and for it to set fully. Also if you cannot find any ladyfingers, they are very easy to make and I will post a recipe for it soon.",
     video: "https://www.tiktok.com/embed/7419285215522196754",
   },
   {
@@ -928,6 +952,7 @@ const recipeData = [
     slug: "yellow-rice-chicken",
     desc: "A flavorful meal with savory yellow rice and grilled chicken.",
     img: "/img/foodPics/yellowricechicken.jpg",
+    filters: ["Lunch", "Healthy"],
     ingredients: [
       {
         title: "For Chicken",
@@ -996,6 +1021,7 @@ const recipeData = [
     slug: "chickenpasta",
     desc: "A mouthwatering dish which will be love at first bite.",
     img: "/img/foodPics/chickenpasta.jpg",
+    filters: ["Lunch", "Pasta"],
     ingredients: [
       {
         items: [

@@ -1,7 +1,7 @@
 export default function About() {
   const list = [
     "I'm a Computer Science graduate with a passion for coding and creativity.",
-    "Cooking has been a love of mine since childhood—nothing beats the joy of creating delicious meals.",
+    "Cooking has been a love of mine since childhood.",
     "This site is a passion project, and I’m always adding more recipes and features.",
     "Stay tuned for updates, as this site is still a work in progress!",
   ];

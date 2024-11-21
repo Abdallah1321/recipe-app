@@ -56,3 +56,17 @@
     }
   }
 }
+
+.clear-filters-btn {
+  padding: 0.5em 1em;
+  background-color: #ff6b6b; /* Red button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1em;
+  &:hover{
+    background-color: #ff4b4b; /* Darker red on hover */
+
+  }
+}
