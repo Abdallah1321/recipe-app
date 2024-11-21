@@ -1,4 +1,0 @@
-[build]
-  base = "recipe-app" # Adjust this to your app's folder name if applicable
-  publish = "build"
-  command = "npm run build"
