@@ -127,6 +127,11 @@ img {
       display: block;
     }
   }
+  .featured-searches .search-box {
+    input {
+      min-width: 200px; // Set a more responsive min-width for smaller screens
+    }
+  }
   .section {
     .col {
       width: 100%;
@@ -142,11 +147,17 @@ img {
   .container {
     padding-inline: 6vw;
   }
+  .recipes-container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    justify-items: center;
+  }
   .footer {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    padding-inline: 1em;
     .footer-section:nth-child(1) {
       grid-column: span 4;
     }
+
   }
 
   @media screen and (max-width: 480px) {

@@ -5,6 +5,7 @@
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     gap: 1em;
+    max-width: 100%;
     .footer-section {
       p {
         opacity: 0.9;
