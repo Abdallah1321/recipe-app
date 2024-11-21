@@ -38,7 +38,7 @@ const recipeData = [
     cookTime: "20 minutes",
     servings: "10",
     notes: "",
-    video: "",
+    video: "https://www.tiktok.com/embed/7438879019887529224",
   },
   {
     name: "Breakfast Burritos",
