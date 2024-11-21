@@ -6,7 +6,7 @@ import Sidebar from "./Sidebar";
 
 export default function Navbar() {
   const [showSidebar, setShowSidebar] = useState(false);
-  const location = useLocation()
+  const location = useLocation();
   const links = [
     {
       name: "Home",
@@ -18,11 +18,13 @@ export default function Navbar() {
       path: "/recipes",
       icon: faList,
     },
+    /*
     {
       name: "Settings",
       path: "/settings",
       icon: faCog,
     },
+    */
   ];
 
   function closeSidebar() {
@@ -37,7 +39,11 @@ export default function Navbar() {
         </Link>
         <div className="nav-links">
           {links.map((link) => (
-            <Link to={link.path} key={link.name} className={location.pathname === link.path ? "active" : ""}>
+            <Link
+              to={link.path}
+              key={link.name}
+              className={location.pathname === link.path ? "active" : ""}
+            >
               {link.name}
             </Link>
           ))}

@@ -6,11 +6,11 @@ import { useState } from "react";
 export default function Recipes() {
   const [searchTerm, setSearchTerm] = useState("");
 
-  const filteredData = recipeData.filter((item) =>
-    item.name.toLowerCase().includes(searchTerm.toLowerCase())
-  );
-
-
+  const filteredData = recipeData
+    .filter((item) =>
+      item.name.toLowerCase().includes(searchTerm.toLowerCase())
+    )
+    .sort((a, b) => a.name.localeCompare(b.name)); 
   return (
     <div>
       <SearchBar onSearch={setSearchTerm} recipeData={recipeData} />
