@@ -158,6 +158,7 @@ img {
 
   .footer-section:nth-child(1) {
     grid-column: span 2; /* Make the first section span both columns on small screens */
+    word-wrap: break-word; /* Prevent text from overflowing */
   }
 
   /* Adjust footer padding to make it more compact on smaller screens */
@@ -171,12 +172,16 @@ img {
     }
 
     .footer {
-      grid-template-columns: 1fr; /* Stack sections vertically */
-      padding-inline: 0.5em;
+      grid-template-columns: 1fr; /* Stack all sections vertically */
+      padding-inline: 1em; /* Make sure padding is not too large */
     }
 
     .footer-section {
-      margin-bottom: 1em; /* Ensure some space between sections */
+      margin-bottom: 1.5em; /* Space out footer sections */
+      word-wrap: break-word; /* Ensure long text breaks correctly */
+      p {
+        font-size: 0.9em; /* Make text smaller on very small screens */
+      }
     }
   }
 }
