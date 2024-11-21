@@ -17,6 +17,19 @@
       transform: translateX(100%);
       opacity: 0;
       animation: getAnimationDuration(0.5s) slideInRight forwards;
+      transition: transform 0.3s ease, background-color 0.3s ease,
+        box-shadow 0.3s ease;
+
+      &:hover {
+        transform: translateX(0); // Smoothly slide back to original position
+        background-color: rgba(
+          192,
+          66,
+          163,
+          0.6
+        ); // Apply color manipulation using rgba() directly
+        box-shadow: 0 6px 12px var(--shadow-color); // Increase shadow on hover
+      }
     }
   }
 
