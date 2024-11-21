@@ -152,17 +152,31 @@ img {
     justify-items: center;
   }
   .footer {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr; /* Adjust grid to two columns */
     padding-inline: 1em;
-    .footer-section:nth-child(1) {
-      grid-column: span 4;
-    }
+  }
 
+  .footer-section:nth-child(1) {
+    grid-column: span 2; /* Make the first section span both columns on small screens */
+  }
+
+  /* Adjust footer padding to make it more compact on smaller screens */
+  .footer {
+    padding-block: 2em;
   }
 
   @media screen and (max-width: 480px) {
     .container {
       padding-inline: 3vw;
+    }
+
+    .footer {
+      grid-template-columns: 1fr; /* Stack sections vertically */
+      padding-inline: 0.5em;
+    }
+
+    .footer-section {
+      margin-bottom: 1em; /* Ensure some space between sections */
     }
   }
 }
