@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 
 import { useState } from "react";
-import { faHome, faList, faCog } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faList, } from "@fortawesome/free-solid-svg-icons";
 import Sidebar from "./Sidebar";
 
 export default function Navbar() {
@@ -35,7 +35,7 @@ export default function Navbar() {
     <>
       <div className="navbar container">
         <Link to={"/"} className="logo">
-          <img src="/img/logo.png" />
+          <img src="/img/logo.png" alt="" />
         </Link>
         <div className="nav-links">
           {links.map((link) => (
