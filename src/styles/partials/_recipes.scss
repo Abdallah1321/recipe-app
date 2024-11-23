@@ -3,6 +3,11 @@
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   grid-gap: 1.5em;
   justify-items: stretch;
+  .no-results-message {
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 2em;
+  }
 }
 
 .recipe-card {

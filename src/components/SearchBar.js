@@ -2,28 +2,33 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect } from "react";
 
-export default function SearchBar({ onSearch, recipeData }) {
+export default function SearchBar({
+  onSearch,
+  recipeData,
+  activeFilters,
+  onClearFilters,
+}) {
   const [filters, setFilters] = useState([]);
 
   // Extract all filters from recipeData when the component mounts
   useEffect(() => {
     const allFilters = new Set();
-    recipeData.forEach(recipe => {
-      recipe.filters.forEach(filter => allFilters.add(filter)); // Add filters to a Set (no duplicates)
+    recipeData.forEach((recipe) => {
+      recipe.filters.forEach((filter) => allFilters.add(filter));
     });
-    setFilters([...allFilters]); // Convert the Set to an array
+    setFilters([...allFilters]);
   }, [recipeData]);
 
   const handleFilterClick = (filter) => {
-    // Filter recipes based on the selected filter
-    const filteredRecipes = recipeData.filter(recipe =>
-      recipe.filters.includes(filter) // Check if the recipe includes the selected filter
-    );
-    onSearch(filteredRecipes); // Pass the filtered recipes to the parent component
+    // Toggle filter selection
+    const updatedFilters = activeFilters.includes(filter)
+      ? activeFilters.filter((f) => f !== filter) // Remove filter if already active
+      : [...activeFilters, filter]; // Add filter if not active
+    onSearch(updatedFilters); // Pass updated filters to parent component
   };
 
   const handleTextSearch = (e) => {
-    onSearch(e.target.value); // Pass the text search term to parent component
+    onSearch(e.target.value); // Pass text search term to parent component
   };
 
   return (
@@ -33,21 +38,35 @@ export default function SearchBar({ onSearch, recipeData }) {
         {filters.map((filter, index) => (
           <div
             key={index}
-            style={{ animationDelay: index * 0.1 + "s" }}
+            style={{
+              animationDelay: index * 0.1 + "s",
+              backgroundColor: activeFilters.includes(filter)
+                ? "#f294dd"
+                : "#c042a3", // Highlight active filters
+            }}
             className="search-item"
-            onClick={() => handleFilterClick(filter)} // Trigger filtering when a filter is clicked
+            onClick={() => handleFilterClick(filter)}
           >
             {filter}
           </div>
         ))}
       </div>
 
+      {/* Active Filters */}
+      {activeFilters.length > 0 && (
+        <div className="active-filters">
+          <button className="btn clear-filters" onClick={onClearFilters}>
+            Clear Filters
+          </button>
+        </div>
+      )}
+
       {/* Search input field */}
       <div className="search-box">
         <input
           type="text"
           placeholder="Search... "
-          onChange={handleTextSearch} // Trigger text-based search
+          onChange={handleTextSearch}
         />
         <button className="btn">
           <FontAwesomeIcon icon={faSearch} />

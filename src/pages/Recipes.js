@@ -4,14 +4,19 @@ import recipeData from "../assets/data.js";
 import { useState } from "react";
 
 export default function Recipes() {
-  const [filteredData, setFilteredData] = useState(recipeData); // All recipes or filtered results
+  const [filteredData, setFilteredData] = useState(recipeData); // Filtered recipes
+  const [activeFilters, setActiveFilters] = useState([]); // List of active filters
 
   const handleSearch = (searchTerm) => {
     if (Array.isArray(searchTerm)) {
-      // This is a filter search, update the filtered data with the filtered recipes
-      setFilteredData(searchTerm);
+      // Update active filters and filter recipes
+      setActiveFilters(searchTerm);
+      const filtered = recipeData.filter((recipe) =>
+        searchTerm.every((filter) => recipe.filters.includes(filter))
+      );
+      setFilteredData(filtered);
     } else {
-      // This is a text search, filter recipes by name
+      // Perform text-based search
       const filtered = recipeData.filter((item) =>
         item.name.toLowerCase().includes(searchTerm.toLowerCase())
       );
@@ -19,16 +24,31 @@ export default function Recipes() {
     }
   };
 
+  const handleClearFilters = () => {
+    // Clear active filters and reset data
+    setActiveFilters([]);
+    setFilteredData(recipeData);
+  };
 
   return (
     <div>
-      <SearchBar onSearch={handleSearch} recipeData={recipeData} />
+      <SearchBar
+        onSearch={handleSearch}
+        recipeData={recipeData}
+        activeFilters={activeFilters}
+        onClearFilters={handleClearFilters} // Pass clear filters handler
+      />
       <div className="recipes-container">
-        {filteredData.map((recipe, index) => (
-          <RecipeCard key={index} recipe={recipe} />
-        ))}
+        {filteredData.length > 0 ? (
+          filteredData.map((recipe, index) => (
+            <RecipeCard key={index} recipe={recipe} />
+          ))
+        ) : (
+          <p className="no-results-message">
+            No recipes match your search criteria or filters.
+          </p>
+        )}
       </div>
-      
     </div>
   );
 }
