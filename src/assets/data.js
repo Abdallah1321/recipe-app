@@ -661,7 +661,7 @@ const recipeData = [
           "4 eggs",
           "1/4 cup water",
           "2 cups panko bread crumbs",
-          "1 tbsp italion seasoning",
+          "1 tbsp italian seasoning",
         ],
       },
     ],

@@ -30,6 +30,10 @@ export default function Recipes() {
     setFilteredData(recipeData);
   };
 
+  const sortedData = [...filteredData].sort((a, b) =>
+    a.name.localeCompare(b.name)
+  );
+
   return (
     <div>
       <SearchBar
@@ -39,8 +43,8 @@ export default function Recipes() {
         onClearFilters={handleClearFilters} // Pass clear filters handler
       />
       <div className="recipes-container">
-        {filteredData.length > 0 ? (
-          filteredData.map((recipe, index) => (
+        {sortedData.length > 0 ? (
+          sortedData.map((recipe, index) => (
             <RecipeCard key={index} recipe={recipe} />
           ))
         ) : (
