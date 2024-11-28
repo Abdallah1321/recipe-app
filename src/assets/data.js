@@ -1101,7 +1101,7 @@ const recipeData = [
     servings: "2 Burritos",
     notes:
       "You can use store bought caesar dressing, however this dressing is lower in calories and has more protein from the greek yogurt so it is a good and healthy substitute. You can make these burritos and store them in the fridge overnight to eat in the morning.",
-    video: "https://www.tiktok.com/embed/7437501574441749768",
+    video: "https://www.tiktok.com/embed/7442411279395966226",
   },
 ];
 
