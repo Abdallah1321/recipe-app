@@ -673,7 +673,7 @@ const recipeData = [
       "Heat oil to 180C, for about 5 minutes or until golden brown and crispy.",
       "Enjoy!!",
     ],
-    prepTime: "20 minutse",
+    prepTime: "20 minutes",
     cookTime: "10 minutes",
     servings: "5",
     notes: "",
@@ -685,7 +685,6 @@ const recipeData = [
     desc: "Rich and indulgent double chocolate muffins.",
     img: "/img/foodPics/muffins.jpg",
     filters: ["Dessert"],
-
     ingredients: [
       {
         title: "For Muffins",
@@ -1058,6 +1057,50 @@ const recipeData = [
     cookTime: "30 minutes",
     servings: "3",
     notes: "",
+    video: "https://www.tiktok.com/embed/7437501574441749768",
+  },
+  {
+    name: "Chicken Caesar Wrap",
+    slug: "caesar-wrap",
+    desc: "A healthy sandwich which can be prepped for any morning.",
+    img: "/img/foodPics/caesarwrap.jpg",
+    filters: ["Healthy", "Breakfast"],
+    ingredients: [
+      {
+        items: [
+          "2 skinless boneless chicken breasts",
+          "2 tbsp olive oil",
+          "Juice of 1 lemon",
+          "1/2 tsp garlic powder",
+          "1 tsp zaatar",
+          "1/2 tsp salt",
+          "1/2 tsp pepper",
+          "2 cups shredded lettuce",
+          "1/4 cup low fat greek yogurt",
+          "1 tbsp light mayo",
+          "1 tsp dijon mustard",
+          "1 tsp worcestershire sauce",
+          "2 tbsp grated parmesean cheese",
+          "Pinch of salt",
+          "Pinch of pepper",
+          "2 large tortillas",
+        ],
+      },
+    ],
+    steps: [
+      "Mix chicken in a bowl with olive oil, lemon juice, garlic powder, zaatar, salt and pepper. Let sit for at least 15 minutes",
+      "Heat a pan on high heat. Sear the chicken ofor 6-8 minutes per side until cooked. Let chicken rest for 10 minutes.",
+      "In the meantime, mix yogurt, mayo, mustard, worcetershire, parmesean, salt and pepper in a bowl. Set aside",
+      "Mix your lettuce with your homemade caesar dressing.",
+      "Cut your chicken into strips.",
+      "Grab 1 of your tortillas and place the lettuce and chicken. Wrap your burrito and toast on a pan seam side down so it becomes sealed.",
+      "Enjoy!!",
+    ],
+    prepTime: "20 minutes",
+    cookTime: "15 minutes",
+    servings: "2 Burritos",
+    notes:
+      "You can use store bought caesar dressing, however this dressing is lower in calories and has more protein from the greek yogurt so it is a good and healthy substitute. You can make these burritos and store them in the fridge overnight to eat in the morning.",
     video: "https://www.tiktok.com/embed/7437501574441749768",
   },
 ];
